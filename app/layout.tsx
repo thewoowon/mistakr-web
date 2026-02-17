@@ -21,6 +21,11 @@ export const metadata: Metadata = {
     description:
       "남의 실패에서 배우면, 내 성공 확률이 올라가요. 스타트업 실패 사례를 시각화하고, AI로 내 아이디어의 리스크를 미리 점검하세요.",
     type: "website",
+    images: [
+      {
+        url: "/opengraph-image.png",
+      },
+    ],
   },
 };
 
