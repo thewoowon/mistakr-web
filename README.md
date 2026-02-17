@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mistakr
 
-## Getting Started
+> 실패도 자산이에요. 남의 실패에서 배우면, 내 성공 확률이 올라가거든요.
 
-First, run the development server:
+---
+
+## 소개
+
+**Mistakr** = Mistake + r
+
+실수를 기록하고(Record), 되짚어보고(Reflect), 반복하지 않는다(Resist).
+
+90%의 스타트업이 실패한다는 건 다들 알아요. 근데 "왜 실패했는지"를 제대로 알려주는 곳은 없었어요. Mistakr는 이 문제를 정면으로 풀어요.
+
+## 핵심 기능
+
+### Phase 1 — 실패 사례 큐레이션
+
+- 노드 그래프로 실패 인과관계 시각화
+- 타임라인 슬라이더로 시간순 사건 흐름 재생
+- 산업별 / 실패유형별 / 투자금액별 필터 탐색
+- 교훈 & 배울점 카드
+- 북마크 기능
+
+### Phase 2 — Failure AI 컨설팅
+
+- 4단계 아이디어 입력 (기본정보 → 팀정보 → 비즈니스정보 → 확인)
+- 7가지 리스크 점수 산출 (PMF, 재무, 경쟁 등)
+- 유사 실패 사례 자동 매칭
+- 상위 위협 & 기회 분석
+- 위기 시점 타임라인 예측
+- 액션 체크리스트 제공
+
+## 타겟 유저
+
+| 고객 | 니즈 | 제공 가치 |
+| --- | --- | --- |
+| 예비/초기 창업자 | "이 아이디어 괜찮은 건가?" 확신이 없음 | 실패 사례 시각화로 인과관계 파악 |
+| 스타트업 대표 | 객관적인 리스크 점검이 필요 | AI 기반 7축 리스크 분석 |
+| 투자자/멘토 | 투자 심사 시 실패 레퍼런스 부족 | 체계적 실패 데이터베이스 |
+
+## 기술 스택
+
+| 영역 | 기술 |
+| --- | --- |
+| Framework | Next.js 16 |
+| Language | TypeScript |
+| Styling | Tailwind CSS 4 |
+| Font | Geist (Sans / Mono) |
+
+## 시작하기
 
 ```bash
+# 의존성 설치
+npm install
+
+# 개발 서버 실행
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# 프로덕션 빌드
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[http://localhost:3000](http://localhost:3000)에서 확인할 수 있어요.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 라이선스
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
