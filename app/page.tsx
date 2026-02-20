@@ -471,6 +471,11 @@ function Footer() {
           실패를 자산으로.
         </span>
       </div>
+      <div className="flex items-center gap-4 text-xs text-[var(--gray-400)]">
+        <a href="/support" className="hover:text-[var(--gray-600)] transition-colors">고객 지원</a>
+        <span>·</span>
+        <a href="/privacy" className="hover:text-[var(--gray-600)] transition-colors">개인정보처리방침</a>
+      </div>
       <p className="text-xs text-[var(--gray-400)]">
         &copy; 2025 Mistakr. All rights reserved.
       </p>
@@ -499,9 +504,17 @@ function Navbar() {
       <span className="text-xl font-black tracking-tight text-[var(--gray-900)]">
         Mistakr
       </span>
-      <button className="rounded-xl bg-[var(--gray-900)] px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-[var(--gray-800)] active:scale-[0.97]">
-        앱 다운로드
-      </button>
+      <div className="flex items-center gap-3">
+        <a
+          href="/support"
+          className="text-sm font-medium text-[var(--gray-500)] transition-colors hover:text-[var(--gray-900)]"
+        >
+          고객 지원
+        </a>
+        <button className="rounded-xl bg-[var(--gray-900)] px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-[var(--gray-800)] active:scale-[0.97]">
+          앱 다운로드
+        </button>
+      </div>
     </nav>
   );
 }
